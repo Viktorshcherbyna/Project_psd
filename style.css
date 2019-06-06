@@ -125,7 +125,8 @@ a {
     #slider{
         display: flex;
         padding: 70px 0 55px 0;
-        justify-content: space-around; 
+        justify-content: space-around;
+        flex-wrap: wrap; 
     }
     .slider-text{
         max-width: 390px;
@@ -147,7 +148,7 @@ a {
     .slider-text button{
         border: 2px solid #fff;
         background: none;
-        padding: 8px 20px; 
+        padding: 10px 20px 7px 20px; 
         border-radius: 5px;
         color: #fff;
         text-transform: uppercase;
@@ -156,21 +157,15 @@ a {
 
     }
 
-
-    @media(max-width: 1000px){
-        @header-top{
-            margin: 0 15px;
+    @media(max-width: 600px){
+        #slider{
+            padding: 15px;
+            text-align: center;
         }
-        #header-nav ul li a{
-            border: none;
-            padding: 10px;
-        }
-        #header-nav ul li{
-            padding: 0 15px;
+        #slider h2{
+            margin: 15px;
         }
     }
-
-
 
     @media(max-width: 720px){
         #header-top, #header-nav ul {
@@ -190,3 +185,22 @@ a {
             margin: 15px;
         }
     }
+
+    @media(max-width: 1000px){
+        header-top{
+            margin: 0 15px;
+        }
+        #header-nav ul li a{
+            border: none;
+            padding: 10px;
+        }
+        #header-nav ul li{
+            padding: 0 15px;
+        }
+    }
+
+
+
+    
+    
+    
